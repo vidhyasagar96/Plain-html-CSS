@@ -1,0 +1,78 @@
+/**********************************
+            Below 1200px  
+**********************************/
+
+@media (max-width: 77em) {
+  .categories {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container {
+    max-width: 90rem;
+  }
+  .left {
+    margin-right: 2rem;
+  }
+
+  .right {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 56em) {
+  .note,
+  .news {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 37em) {
+  .topbar {
+    display: block;
+  }
+
+  .left {
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .right {
+    justify-content: center;
+  }
+
+  .btn-search span {
+    display: none;
+  }
+
+  input {
+    width: 37rem;
+  }
+}
+
+@media (max-width: 28em) {
+  .nav-link {
+    display: none;
+  }
+
+  .search {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .btn-search {
+    padding: 1.2rem 1.3rem;
+  }
+  .btn-search span {
+    display: inline-block;
+  }
+  input {
+    width: 32rem;
+  }
+  .topbar-element {
+    margin: 0;
+  }
+  .btn-menu {
+    display: block;
+  }
+}

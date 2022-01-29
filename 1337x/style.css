@@ -1,0 +1,371 @@
+/*
+Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1;
+  background-color: #01161e;
+
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+main {
+  padding-bottom: 4.5rem;
+}
+
+/**********************************
+              TOPBAR
+**********************************/
+.header-top {
+  border-bottom: 0.5rem solid #c92a2a;
+  background-color: #000;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+
+  font-size: 1.4rem;
+
+  font-family: "Oswald", sans-serif;
+
+  text-transform: uppercase;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 0 0 0.8rem;
+  cursor: pointer;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #d63600;
+}
+
+.topbar-element {
+  list-style-type: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.topbar-element li {
+  border-left: 0.2rem solid #c92a2a;
+}
+
+.topbar-element li:first-child {
+  border: none;
+}
+
+.nav-home:link,
+.nav-home:visited {
+  color: #65ad19;
+}
+.nav-home:hover,
+.nav-home:active {
+  color: #fff;
+}
+
+.nav-login:link,
+.nav-login:visited {
+  color: #d63600;
+}
+
+.nav-login:hover,
+.nav-login:active {
+  color: #fff;
+}
+
+.btn-menu {
+  display: none;
+  color: #fff;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+/**********************************
+              HERO
+**********************************/
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9.6rem 0;
+  gap: 4.8rem;
+}
+.hero img {
+  width: 26.5rem;
+}
+
+.search {
+  display: flex;
+}
+input {
+  width: 43rem;
+  padding: 1.4rem;
+  /* font-family: inherit; */
+  font-size: 1.6rem;
+  border: 1px solid #5c4841;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+  background-color: #000;
+}
+::placeholder {
+  color: #adadad;
+}
+
+.btn-search {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0 1rem;
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+
+  border: none;
+  background-color: #d63600;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid #ff6735;
+}
+
+.btn-search:hover,
+.btn-search:active {
+  background-color: #da4a1a;
+}
+
+.btn-search span {
+  color: #fff;
+  text-shadow: 0 -0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+  height: 2rem;
+  color: #fff;
+  filter: drop-shadow(0 -0.2rem 0.2rem rgba(0, 0, 0, 0.5));
+}
+
+/**********************************
+              news
+**********************************/
+.section-note {
+  margin-bottom: 4.8rem;
+}
+.news-container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.7rem;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  background-color: rgba(214, 54, 0, 0.7);
+  border: 1px solid #ff6735;
+
+  padding: 1.4rem 1.5rem;
+  /* margin-bottom: 5rem; */
+}
+
+.time {
+  font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  gap: 1rem;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.latest-news {
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 1.8rem 0 1.2rem 1rem;
+  background-color: #212529;
+}
+.latest-news a:link,
+.latest-news a:visited {
+  color: #d83f09;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.latest-news a:hover,
+.latest-news a:active {
+  color: #d83f09;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/**********************************
+            categories  
+**********************************/
+.section-categories {
+  margin-bottom: 4.8rem;
+}
+
+.icon-cat {
+  height: 3rem;
+  stroke: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-cat {
+  border-radius: 50%;
+
+  padding: 2rem;
+  border: 3px solid #ee490e;
+  /* background-color: #b42f00; */
+  background: linear-gradient(70deg, #b42f00 49.9%, #ee490e 50.1%);
+}
+
+.category {
+  color: #f14f14;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: "Oswald Light";
+}
+.library {
+  color: #89ad19;
+  font-size: 1.3rem;
+  text-decoration: none;
+  position: absolute;
+  top: 110%;
+  left: 25%;
+  /* transform: translate(50%, 20%); */
+}
+
+.library:hover {
+  text-decoration: underline;
+}
+
+.logo-cat {
+  display: flex;
+  width: min-content;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 2rem;
+  align-items: center;
+  position: relative;
+  padding: 1rem 1rem;
+}
+
+.btn-cat,
+.category {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-cat:hover {
+  background: linear-gradient(70deg, #b42f00 49.9%, #b42f00 50.1%);
+}
+
+.logo-cat:hover {
+  text-decoration: underline;
+}
+
+.categories {
+  display: flex;
+  gap: 3.2rem;
+  /* flex-wrap: wrap; */
+  /* padding: 0 10.5rem; */
+  /* justify-content: space-between; */
+}
+
+/**********************************
+            Footer  
+**********************************/
+footer {
+  background-color: #000;
+  color: #818181;
+  padding: 0 0 2.5rem 0;
+  margin-top: auto;
+  border-top: 1px solid #55200e;
+}
+
+.wallet {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "Oswald Regular", sans-serif;
+  padding: 1rem 1rem 1rem 4rem;
+  border-radius: 10rem;
+  background-color: #212529;
+  margin-top: 2.5rem;
+  border: 1px solid #505050;
+  color: #fff;
+}
+
+.wallet span {
+  cursor: pointer;
+}
+.wallet span:hover {
+  color: #d63600;
+}
+.cryto-wallet {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.wallet::before {
+  content: "";
+  background: url("https://www.svgrepo.com/show/303287/bitcoin-logo.svg");
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translate(-110%, -32%);
+}
+
+.footer-nav {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  justify-content: center;
+  font-family: "Oswald Light";
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.footer-nav li:nth-child(2) {
+  color: #fff;
+}
+
+.site-info {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
