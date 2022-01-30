@@ -211,6 +211,7 @@ input {
   color: #fff;
   padding: 1.8rem 0 1.2rem 1rem;
   background-color: #212529;
+  line-height: 1.4;
 }
 .latest-news a:link,
 .latest-news a:visited {
@@ -279,6 +280,7 @@ input {
   align-items: center;
   position: relative;
   padding: 1rem 1rem;
+  font-weight: 500;
 }
 
 .btn-cat,
